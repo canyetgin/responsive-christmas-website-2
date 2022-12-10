@@ -92,7 +92,7 @@ img {
 .section {
   padding-block: 5rem 1rem;
 }
-.section__title {
+.section-title {
   font-size: var(--h1-font-size);
   font-family: var(--second-font);
   text-align: center;
@@ -222,6 +222,9 @@ img {
 .show-menu {
   top: 0;
 }
+.bg-header {
+  background: var(--body-color);
+}
 .home {
   position: relative;
   background: linear-gradient(180deg, hsl(210, 88%, 20%), hsl(210, 70%, 58%));
@@ -253,43 +256,131 @@ img {
   right: 0;
   margin: 0 auto;
 }
-.home-village{
+.home-village {
   width: 260px;
   bottom: 1rem;
 }
 
-.home-pine{
+.home-pine {
   width: 250px;
   bottom: 4rem;
 }
 
-.home-mountain-2{
+.home-mountain-2 {
   bottom: 3rem;
 }
-.home-mountain-3{
+.home-mountain-3 {
   bottom: 6rem;
 }
-.home-moon{
+.home-moon {
   width: 300px;
   bottom: 8.5rem;
 }
-.home-trineo{
+.home-trineo {
   width: 250px;
   bottom: 14.5rem;
-
 }
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 0.6rem;
   border-radius: 0.5rem;
   background-color: hsl(210, 8%, 15%);
 }
-::-webkit-scrollbar-thumb{
-
+::-webkit-scrollbar-thumb {
   background-color: hsl(210, 8%, 25%);
   border-radius: 0.5rem;
 }
-::-webkit-scrollbar-thumb:hover{
-
+::-webkit-scrollbar-thumb:hover {
   background-color: hsl(210, 8%, 35%);
- 
+}
+.about-container {
+  position: relative;
+  row-gap: 3.5rem;
+}
+.about-data {
+  text-align: center;
+}
+
+.about-desc {
+  margin-bottom: 2rem;
+}
+.about-img {
+  width: 320px;
+  justify-self: center;
+}
+
+.about-snow1,
+.about-snow2 {
+  width: 50px;
+  position: absolute;
+}
+
+.about-snow1 {
+  top: 12rem;
+  left: 1.5rem;
+  animation: var(--animate-snow-1);
+}
+.about-snow2 {
+  bottom: 0.5rem;
+  right: -0.75rem;
+  animation: var(--animate-snow-2);
+}
+.button {
+  display: inline-block;
+  background-color: var(--first-color);
+  padding: 1rem 2rem;
+  border-radius: 4rem;
+  color: white;
+  font-weight: var(--font-medium);
+  transition: backgorund 0.4s, box-shadow 0.4s;
+}
+
+.button:hover {
+  background-color: var(--first-color-alt);
+  box-shadow: 0 8px 32px hsla(210, 80%, 54%, 0.7);
+}
+
+.send-container {
+  position: relative;
+  grid-template-columns: 200px;
+  justify-content: center;
+  row-gap: 3rem;
+  padding-top: 1.5rem;
+}
+.send-card {
+  text-align: center;
+}
+
+.send-img {
+  width: 180px;
+  margin-bottom: 0.75rem;
+}
+.send-title {
+  font-size: var(--h3-font-size);
+  margin-bottom: 0.5rem;
+}
+
+.send-desc {
+  font-size: var(--small-font-size);
+  padding-inline: 2.5rem;
+}
+.send-snow-1,
+.send-snow-2,
+.send-snow-3 {
+  width: 50px;
+  position: absolute;
+}
+.send-snow-1 {
+  left: 0;
+  top: 7rem;
+  animation: var(--animate-snow-1);
+}
+.send-snow-2 {
+  right: 0;
+  top: 23rem;
+  animation: var(--animate-snow-2);
+}
+.send-snow-3 {
+  left: 0;
+  bottom: 9rem;
+  animation: var(--animate-snow-1);
 }
