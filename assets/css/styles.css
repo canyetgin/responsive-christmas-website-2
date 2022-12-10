@@ -247,7 +247,9 @@ img {
 .home-snow {
   bottom: 0;
 }
-
+.home-village{
+  width: 200px;
+}
 .home-village,
 .home-pine,
 .home-moon,
@@ -589,7 +591,10 @@ footer {
   }
   .home-village{
     width: 750px;
-    bottom: 12.5rem;
+    bottom: 9.5rem;
+  }
+  .home-trineo{
+    bottom: 32rem;
   }
   .home-pine{
     width: 720px;
