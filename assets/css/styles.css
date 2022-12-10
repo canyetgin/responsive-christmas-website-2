@@ -384,3 +384,63 @@ img {
   bottom: 9rem;
   animation: var(--animate-snow-1);
 }
+.celebrate-container {
+  position: relative;
+  row-gap: 3.5rem;
+}
+.celebrate-data {
+  text-align: center;
+}
+
+.celebrate-img {
+  width: 320px;
+  justify-self: center;
+}
+
+.celebrate-desc {
+  margin-bottom: 2rem;
+}
+.celebrate-snow-1,
+.celebrate-snow-2 {
+  width: 50px;
+  position: absolute;
+}
+.celebrate-snow-1 {
+  left: 1.5rem;
+  top: 1.5rem;
+  animation: var(--animate-snow-1);
+}
+.celebrate-snow-2 {
+  right: 0;
+  top: 18rem;
+  animation: var(--animate-snow-2);
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.scrollup {
+  position: fixed;
+  right: 1rem;
+  bottom: -100%;
+  background-color: white;
+  box-shadow: 0 4px 12px hsla(19, 64%, 24%, 0.1);
+  display: inline-flex;
+  padding: 0.45rem;
+  border-radius: 0.45rem;
+  font-size: 1rem;
+  color: var(--first-color);
+  z-index: var(--z-tooltip);
+  transition: bottom 0.3s, transform 0.3s, backgorund 0.4s;
+}
+
+.scrollup:hover {
+  transform: translateY(-0.25rem);
+}
+.scrollup-active{
+  bottom: 3rem;
+}
